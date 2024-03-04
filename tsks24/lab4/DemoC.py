@@ -42,8 +42,8 @@ Ybq[(0, 1, 8, 9), :] = np.round(Yb[(0, 1, 8, 9), :])
 yq2 = jl.ibdct(Ybq, (8, 8), (512, 768))
 plt.figure(5)
 plt.imshow(yq2, 'gray', clim=(0, 255))
-
 plt.title('coded image yq2 4 coefficients')
+
 
 print(f'min: {np.min(Ybq)} max: {np.max(Ybq)}')
 
@@ -57,7 +57,7 @@ Yb9 = jl.bdct(y, (8, 8))
 Ybq9 = np.zeros_like(Yb)
 Ybq9[(0, 1, 2, 8, 9, 10, 16, 17, 18), :] = np.round(Yb[(0, 1, 2, 8, 9, 10, 16, 17, 18), :])
 yq29 = jl.ibdct(Ybq9, (8, 8), (512, 768))
-plt.figure(5)
+plt.figure(6)
 plt.imshow(yq2, 'gray', clim=(0, 255))
 plt.title('coded image yq2 9 coefficients')
 

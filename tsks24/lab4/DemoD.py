@@ -70,34 +70,34 @@ print('PSNR:', psnr(yn,yq29))"""
 
 #plt.show(block=True)
 
-
+"""
 Q1 = 50
 Ybq = jl.bquant(Yb, Q1)
 Ybr = jl.brec(Ybq, Q1)
 yr = jl.ibdct(Ybr, (8, 8), (512, 768))
-#plt.figure(1)
-#plt.imshow(yr, 'gray', clim=(0, 255))
-#plt.title('reconstructed image Q1=50')
+plt.figure(1)
+plt.imshow(yr, 'gray', clim=(0, 255))
+plt.title('reconstructed image Q1=50')
 
-"""print('Q1 = 50 -------------------------')
+print('Q1 = 50 -------------------------')
 print('MSE:', mse(y, yr))
-print('PSNR:', psnr(y, yr))"""
+print('PSNR:', psnr(y, yr))
 
-Q12 = 20
+Q12 = 18
 Ybq20 = jl.bquant(Yb, Q12)
 Ybr20 = jl.brec(Ybq20, Q12)
 yr20 = jl.ibdct(Ybr20, (8, 8), (512, 768))
-#plt.figure(2)
-#plt.imshow(yr20, 'gray', clim=(0, 255))
-#plt.title('reconstructed image Q1=20')
+plt.figure(2)
+plt.imshow(yr20, 'gray', clim=(0, 255))
+plt.title('reconstructed image Q1=20')
 
-"""print('Q1 = 20 -------------------------')
+print('Q1 = 18 -------------------------')
 print('MSE:', mse(y, yr20))
-print('PSNR:', psnr(y, yr20))"""
+print('PSNR:', psnr(y, yr20))
 
 
-#plt.show(block=False)
-
+plt.show(block=True)
+"""
 Qm = jl.jpgqmtx()
 Qm.reshape(8, 8)
 #print(Qm)

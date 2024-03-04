@@ -31,10 +31,12 @@ if __name__ == '__main__':
         X = 2**a
         coded = X*np.floor_divide(y, X) 
         plt.figure(i)
-        plt.imshow(y, 'gray', clim=(0, 255))
-        plt.title(f'y, X={X}')
+        plt.imshow(coded, 'gray', clim=(0, 255))
+        plt.title(f'y, X={X}, a={a}, i={i}')
 
         print(f'i={i} MSE:', mse(y, coded))
         print(f'i={i} PSNR:', psnr(y, coded))
+        plt.show(block=False)
 
     plt.show(block=True)
+
