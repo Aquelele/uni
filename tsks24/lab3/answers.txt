@@ -1,0 +1,69 @@
+Q1: 
+max 207.0
+min 2.0
+
+
+Q2:
+original
+63:15 = 75.0
+contrast
+63:15 = 64.0
+
+
+
+Q3:
+gray vals has values between 0 and 1 instead of between 0 and 255.
+
+Q4:
+values equal or grater than 200 become red
+
+Q5:
+Blue/turcoise
+
+
+Q6:
+Fine detail and edges are lost in the Averaging filter image. 
+
+Q7:
+Before convolution data outside of the image is assumed to be 0. This is called zero padding.
+
+Q8:
+The effect of the filter gets stronger.
+
+Q9:
+With aver set to "aver *= 1.1" the image looks brighter but the blur is the same.
+
+Q10:
+The edge of the circle is light when the original image goes from a dark colour to a light colour. 
+The edge of the circle is dark when the original image goes from a light colour to a dark colour.
+And depending on how fast the original image goes from dark to light or light to dark the edge of the circle is more or less dark or light.
+
+Q11:
+c
+
+Q12:
+c
+
+Q13:
+Yes! this the case becaus dubble lines are obtained at the adge of the circle. (one positive and one negative)
+
+Q14:
+a
+In smooth regions it is gray. In regions with a lot of detail it it gets dubble lines.
+
+Q15:
+the image gets blurred and the edges get less sharp.
+
+Q16:
+a
+
+Q17:
+b aprox 4
+
+Q18:
+a anuates
+
+Q19:
+a
+
+Q20:
