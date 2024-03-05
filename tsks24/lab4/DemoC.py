@@ -58,7 +58,7 @@ Ybq9 = np.zeros_like(Yb)
 Ybq9[(0, 1, 2, 8, 9, 10, 16, 17, 18), :] = np.round(Yb[(0, 1, 2, 8, 9, 10, 16, 17, 18), :])
 yq29 = jl.ibdct(Ybq9, (8, 8), (512, 768))
 plt.figure(6)
-plt.imshow(yq2, 'gray', clim=(0, 255))
+plt.imshow(yq29, 'gray', clim=(0, 255))
 plt.title('coded image yq2 9 coefficients')
 
 print("YBQ9-------------------------")
